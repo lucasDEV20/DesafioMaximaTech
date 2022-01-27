@@ -1,0 +1,20 @@
+button {
+    margin-bottom: 30px;
+    background-color:#1A374D;
+    color:#fff;
+    border-radius: 3px;
+}
+
+
+button .glassbtn {
+    background: rgba(#255, #255, #255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.fundo{
+    background-color: #B1D0E0;
+    justify-content: flex-end;
+    max-width: 100%;
+    max-height: 100%;
+}

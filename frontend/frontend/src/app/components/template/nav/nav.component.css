@@ -1,9 +1,18 @@
-.cotanier {
-    width: 500px;
-    height: 300px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+.content {
+    padding: 16px;
+    background-color: #fff; 
 }
 
-.sidnav{
-    padding:     20px;
+.sidenav{
+    width: 200px;
+    background-color: #406882;
+    justify-content: center;
+}
+
+.sidenav a{
+    color: #fff
+}
+
+.sidenav i {
+    padding-right: 10px
 }

@@ -1,1 +1,40 @@
-<p>cliente-create works!</p>
+<mat-card>
+    <mat-card-title>
+        <i class = "material-icons">
+          person
+        </i>
+        Novo Cliente
+    </mat-card-title>
+    <br>
+    <form>
+        <mat-form-field appearance="outline">
+            <mat-label>Escreva o nome do cliente </mat-label>
+            <input matInput placeholder="Nome"[(ngModel)]="cliente.nome" name = "nome">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Escreva o nome do cliente </mat-label>
+            <input matInput placeholder="Codigo"[(ngModel)]="cliente.codigo" name = "codigo">
+        </mat-form-field>
+       
+
+        
+    <button mat-raised-button (click) ="createCliente()" color= "primary">
+        <i class="material-icons">
+            save
+        </i>
+        <br>
+        Salvar
+    </button>
+    
+    <button mat-raised-button  (click) ="cancel()">
+        <i class="material-icons">
+            cancel
+        </i>
+        <br>
+        Cancelar
+    </button>
+    </form>
+ 
+
+    
+</mat-card>

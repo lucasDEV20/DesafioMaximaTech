@@ -25,11 +25,11 @@ export class HomeComponent implements OnInit {
   }
 
   navigateToVendedorCreate(): void {
-    this.router.navigate(['/Vendedor/create'])
+    this.router.navigate(['/vendedor/create'])
   }
 
   navigateToClienteCreate(): void {
-    this.router.navigate(['/Cliente/create'])
+    this.router.navigate(['/cliente/create'])
   }
 
 }

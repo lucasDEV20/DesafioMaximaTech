@@ -1,1 +1,41 @@
-<p>produto-create works!</p>
+<mat-card>
+    <mat-card-title>
+        <i class = "material-icons">
+          person
+        </i>
+        Novo Produto
+    </mat-card-title>
+    <br>
+    <form>
+        <mat-form-field appearance="ouline">
+        <mat-label>Insira o nome do produto a ser cadastrado</mat-label>
+        <input matInput placeholder="Nome" [(ngModel)]="produto.nome"
+        name = "nome">
+        </mat-form-field>
+        <mat-form-field appearance="ouline">
+        <mat-label>Insira o codigo do produto a ser cadastrado</mat-label>
+        <input matInput placeholder="Codigo" [(ngModel)]="produto.codigo"
+        name = "codigo">
+        </mat-form-field>
+
+        
+    <button mat-raised-button (click) ="createProduto()" color= "primary">
+        <i class="material-icons">
+            save
+        </i>
+        <br>
+        Salvar
+    </button>
+    
+    <button mat-raised-button  (click) ="cancel()">
+        <i class="material-icons">
+            cancel
+        </i>
+        <br>
+        Cancelar
+    </button>
+    </form>
+ 
+
+    
+</mat-card>

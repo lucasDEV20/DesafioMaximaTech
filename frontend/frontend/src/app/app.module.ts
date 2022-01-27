@@ -30,6 +30,11 @@ import { ProdutoCreateComponent } from './components/produto/produto-create/prod
 import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
 import { VendedorCreateComponent } from './components/vendedor/vendedor-create/vendedor-create.component';
 import { NavComponent } from './components/template/nav/nav.component';
+import { ClienteReadComponent } from './components/cliente/cliente-read/cliente-read.component';
+import { ProdutoReadComponent } from './components/produto/produto-read/produto-read.component';
+import { VendedorReadComponent } from './components/vendedor/vendedor-read/vendedor-read.component';
+
+
 
 
 @NgModule({
@@ -45,6 +50,9 @@ import { NavComponent } from './components/template/nav/nav.component';
     ClienteCreateComponent,
     VendedorCreateComponent,
     NavComponent,
+    ClienteReadComponent,
+    ProdutoReadComponent,
+    VendedorReadComponent,
     
     
   ],

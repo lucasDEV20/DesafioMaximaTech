@@ -42,11 +42,6 @@ const routes: Routes = [
     path: 'cliente/create',
     component: ClienteCreateComponent,
   },
-
-  {
-    path: 'clientes',
-    component: ClientesCrudComponent,
-  },
 ]
 
 @NgModule({
