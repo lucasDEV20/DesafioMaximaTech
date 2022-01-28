@@ -12,7 +12,7 @@ import { Vendedor } from './vendedor.model'
 })
 export class VendedorService {
 
-  baseUrl = "http://localhost:3001/vendedor"
+  baseUrl = "http://localhost:4200/vendedor/"
 
   constructor(
     private snackBar: MatSnackBar,
@@ -20,14 +20,14 @@ export class VendedorService {
     ) { }
 
   showMessage(msg: string, isError: boolean = false): void {
-    this.snackBar.open(msg, 'X', {
+   this.snackBar.open(msg, 'X', {
       duration: 3000,
       horizontalPosition: "right",
       verticalPosition: "top",
       panelClass: isError ? ['msg-error'] : ['msg-success']
       
     });
-  }
+   }
   
 
 

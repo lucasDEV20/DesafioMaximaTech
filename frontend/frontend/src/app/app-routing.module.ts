@@ -1,3 +1,5 @@
+import { VendedorDeleteComponent } from './components/vendedor/vendedor-delete/vendedor-delete.component';
+import { ProdutoUpdateComponent } from './components/produto/produto-update/produto-update.component';
 import { ProdutoCreateComponent } from './components/produto/produto-create/produto-create.component'
 import { NgModule } from '@angular/core'
 import { Routes, RouterModule } from '@angular/router'
@@ -7,6 +9,8 @@ import { VendedorCrudComponent } from './view/vendedor-crud/vendedor-crud.compon
 import { ProdutoCrudComponent } from './view/produto-crud/produto-crud.component'
 import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component'
 import { VendedorCreateComponent } from './components/vendedor/vendedor-create/vendedor-create.component'
+import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
+import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
 
 const routes: Routes = [
   //rotas dos componentes
@@ -35,13 +39,39 @@ const routes: Routes = [
     component: ProdutoCreateComponent,
   },
   {
-    path: 'vendedor/create',
+    path: 'vendedor-create',
     component: VendedorCreateComponent,
   },
   {
     path: 'cliente/create',
     component: ClienteCreateComponent,
   },
+  {
+    path: 'produto/update:id',
+    component: ProdutoUpdateComponent,
+  },
+  {
+    path: 'vendedor/update:id',
+    component: VendedorCreateComponent,
+  },
+  {
+    path: 'cliente/update:id',
+    component: ClienteUpdateComponent,
+  },
+  {
+    path: 'produto/delete:id',
+    component: ClienteDeleteComponent,
+  },
+  {
+    path: 'vendedor/update:id',
+    component: VendedorDeleteComponent,
+  },
+  {
+    path: 'cliente/delete:id',
+    component: ClienteDeleteComponent,
+  },
+
+
 ]
 
 @NgModule({

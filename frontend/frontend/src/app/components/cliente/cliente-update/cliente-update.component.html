@@ -1,30 +1,32 @@
-<mat-card>
-    <mat-card-title>
-        <i class = "material-icons">
-          face
+<mat-card > 
+    <mat-card-title >
+        <i class="material-icons ">
+            face
         </i>
-        Novo Cliente
+        Alterar Cliente
     </mat-card-title>
     <br>
     <form>
         <mat-form-field appearance="outline">
             <mat-label>Escreva o nome do cliente </mat-label>
-            <input matInput placeholder="Nome"[(ngModel)]="cliente.nome" name = "nome">
+            <input matInput placeholder="Nome"[value]="cliente.nome" name = "nome" disabled>
         </mat-form-field>
         <mat-form-field appearance="outline">
-            <mat-label>Escreva o nome do cliente </mat-label>
-            <input matInput placeholder="Codigo"[(ngModel)]="cliente.codigo" name = "codigo">
+            <mat-label>Escreva a Escreva codigo do cliente</mat-label>
+            <input matInput placeholder="Codigo" [value]="cliente.codigo" name="codigo" disabled>
         </mat-form-field>
-       
-
         
-    <button mat-raised-button (click) ="createCliente()" color= "primary">
+        
+        
+    </form>
+    <button mat-raised-button (click) ="updateCliente()" color= "warn">
         <i class="material-icons">
             save
         </i>
         <br>
-        Salvar
+        Atualizar
     </button>
+    
     
     <button mat-raised-button  (click) ="cancel()">
         <i class="material-icons">
@@ -33,8 +35,4 @@
         <br>
         Cancelar
     </button>
-    </form>
- 
-
-    
 </mat-card>

@@ -1,0 +1,38 @@
+<mat-card > 
+    <mat-card-title >
+        <i class="material-icons ">
+            face
+        </i>
+        Alterar Produto
+    </mat-card-title>
+    <br>
+    <form>
+        <mat-form-field appearance="outline">
+            <mat-label>Escreva o nome do Produto </mat-label>
+            <input matInput placeholder="Nome"[value]="produto.nome" name = "nome" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Escreva a Escreva codigo do Produto</mat-label>
+            <input matInput placeholder="Codigo" [value]="produto.codigo" name="codigo" disabled>
+        </mat-form-field>
+        
+        
+        
+    </form>
+    <button mat-raised-button (click) ="updateProduto()" color= "warn">
+        <i class="material-icons">
+            save
+        </i>
+        <br>
+        Atualizar
+    </button>
+    
+    
+    <button mat-raised-button  (click) ="cancel()">
+        <i class="material-icons">
+            cancel
+        </i>
+        <br>
+        Cancelar
+    </button>
+</mat-card>

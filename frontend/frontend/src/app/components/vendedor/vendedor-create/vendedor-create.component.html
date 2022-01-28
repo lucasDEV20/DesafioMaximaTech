@@ -1,1 +1,38 @@
-<p>vendedor-create works!</p>
+<mat-card>
+    <mat-card-title>
+        <i class="material-icons">
+            person
+        </i>
+        Novo verdedor Mazzaropi
+    </mat-card-title>
+    <form>
+        <mat-form-field appearance="outline">
+            <mat-label>Insira o nome do vendedor a ser cadastrado</mat-label>
+            <input matInput placeholder="Nome" [(ngModel)]="vendedor.nome"
+                name="nome">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Insira o codigo do vendedor a ser cadastrado</mat-label>
+            <input matInput placeholder="Codigo" [(ngModel)]="vendedor.codigo"
+                name="codigo">
+        </mat-form-field>
+
+
+        <button mat-raised-button (click)="createVendedor()" color="primary">
+            <i class="material-icons">
+                save
+            </i>
+            <br>
+            Salvar
+        </button>
+
+        <button mat-raised-button (click)="cancel()">
+            <i class="material-icons">
+                cancel
+            </i>
+            <br>
+            Cancelar
+        </button>
+    </form>
+
+</mat-card>

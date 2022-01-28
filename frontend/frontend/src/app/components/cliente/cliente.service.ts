@@ -10,7 +10,7 @@ import { Cliente } from './cliente.model'
 })
 export class ClienteService {
 
-  baseUrl = "http://localhost:3001/cliente"
+  baseUrl = "http://localhost:3001/clientes"
 
   constructor(
     private snackBar: MatSnackBar,
@@ -26,11 +26,7 @@ export class ClienteService {
       
     });
   }
-  
 
-
-  //metodo que via fazer a submissao para o backend criando 
-  //um novo produto ("para entender melhor va em assets e procure  por info.txt observable")
   create(cliente: Cliente): Observable<Cliente> {
     return this.http.post<Cliente>(this.baseUrl, cliente).pipe(
       map((obj) => obj),
@@ -53,9 +49,9 @@ export class ClienteService {
     );
   }
 
-  update(client: Cliente): Observable<Cliente> {
-    const url = `${this.baseUrl}/${client.id}`;
-    return this.http.put<Cliente>(url, client).pipe(
+  update(cliente: Cliente): Observable<Cliente> {
+    const url = `${this.baseUrl}/${cliente.id}`;
+    return this.http.put<Cliente>(url, cliente).pipe(
       map((obj) => obj),
       catchError((e) => this.errorHandler(e))
     );

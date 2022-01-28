@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule}  from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ClientesCrudComponent } from './view/clientes-crud/clientes-crud.component';
@@ -33,6 +35,12 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { ClienteReadComponent } from './components/cliente/cliente-read/cliente-read.component';
 import { ProdutoReadComponent } from './components/produto/produto-read/produto-read.component';
 import { VendedorReadComponent } from './components/vendedor/vendedor-read/vendedor-read.component';
+import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
+import { ProdutoDeleteComponent } from './components/produto/produto-delete/produto-delete.component';
+import { VendedorDeleteComponent } from './components/vendedor/vendedor-delete/vendedor-delete.component';
+import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
+import { VendedorUpdateComponent } from './components/vendedor/vendedor-update/vendedor-update.component';
+import { ProdutoUpdateComponent } from './components/produto/produto-update/produto-update.component';
 
 
 
@@ -53,6 +61,12 @@ import { VendedorReadComponent } from './components/vendedor/vendedor-read/vende
     ClienteReadComponent,
     ProdutoReadComponent,
     VendedorReadComponent,
+    ClienteDeleteComponent,
+    ProdutoDeleteComponent,
+    VendedorDeleteComponent,
+    ClienteUpdateComponent,
+    VendedorUpdateComponent,
+    ProdutoUpdateComponent,
     
     
   ],
@@ -72,9 +86,13 @@ import { VendedorReadComponent } from './components/vendedor/vendedor-read/vende
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    HttpClientModule
 
     
+  ],
+  exports: [
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
