@@ -1,0 +1,49 @@
+/* import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString; */
+
+/* @Getter
+@Setter
+@ToString */
+// como estou usando o lombok nao tera a necessidade de declarar os metodos
+    // GTERS E SETERS
+    /*
+     * public long getId() {
+     * return id;
+     * }
+     * 
+     * public String getNome() {
+     * return nome;
+     * }
+     * 
+     * public Number getCodigo() {
+     * return codigo;
+     * }
+     * 
+     * public void setId(long id) {
+     * this.id = id;
+     * }
+     * 
+     * public void setNome(String nome) {
+     * this.nome = nome;
+     * }
+     * 
+     * public void setCodigo(Number codigo) {
+     * this.codigo = codigo;
+     * }
+     */
+
+     /*  @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.PUT)
+    @RequestMapping(method = RequestMethod.DELETE)
+    @RequestMapping(method = RequestMethod.READ) */
+
+    /* @postMapping
+    @PutMapping
+    @deleteMapping
+    @readMapping */
+
+}
+
+     Para a chave primaria utilizamos a anotação (@id)
+     Para definir as colunas utilizamos a anotação (@Column)
