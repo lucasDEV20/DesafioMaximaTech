@@ -15,7 +15,7 @@ import lombok.Data;
 public class Produto {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @JsonProperty("id")
     private Long id;
     

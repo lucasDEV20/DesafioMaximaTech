@@ -48,27 +48,27 @@ const routes: Routes = [
     component: ClienteCreateComponent,
   },
   {
-    path: 'produto/update:id',
+    path: 'produto/update/:id',
     component: ProdutoUpdateComponent,
   },
   {
-    path: 'vendedor/update:id',
+    path: 'vendedor/update/:id',
     component: VendedorUpdateComponent,
   },
   {
-    path: 'cliente/update:id',
+    path: 'cliente/update/:id',
     component: ClienteUpdateComponent,
   },
   {
-    path: 'produto/delete:id',
+    path: 'produto/delete/:id',
     component: ClienteDeleteComponent,
   },
   {
-    path: 'vendedor/delete:id',
+    path: 'vendedor/delete/:id',
     component: VendedorDeleteComponent,
   },
   {
-    path: 'cliente/delete:id',
+    path: 'cliente/delete/:id',
     component: ClienteDeleteComponent,
   },
 

@@ -7,7 +7,9 @@ import javax.el.ELException;
 import com.lucasdev.backendspring.model.Vendedor;
 import com.lucasdev.backendspring.repository.VendedorRepository;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,8 +30,8 @@ public class VendedorController {
 
 
     @GetMapping(value = "/{id}")
-    public @ResponseBody List<Vendedor> list() {
-        return vendedorRepository.findAll();
+    public @ResponseBody Vendedor getById(@PathVariable Long id) {
+        return vendedorRepository.findById(id).get();
     }
 
     @GetMapping
@@ -51,6 +53,13 @@ public class VendedorController {
         
      }
     
+     @DeleteMapping(value = "/{id}")
+     public Vendedor delete(@PathVariable Long id){
+         Vendedor vendedor = this.vendedorRepository.findById(id).get();
+         this.vendedorRepository.deleteById(id);
+         return vendedor;
 
+         
+     }
    
 }

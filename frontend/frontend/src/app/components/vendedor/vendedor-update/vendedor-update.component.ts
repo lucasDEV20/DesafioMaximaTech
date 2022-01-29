@@ -21,8 +21,7 @@ export class VendedorUpdateComponent implements OnInit {
   ngOnInit(): void {
     
     const id = +this.route.snapshot.paramMap.get('id');
-    console.log(id);
-    return 
+    
     
     this.vendedorService.readById(id).subscribe(vendedor => 
     {
