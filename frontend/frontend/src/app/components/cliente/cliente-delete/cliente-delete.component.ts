@@ -29,11 +29,11 @@ export class ClienteDeleteComponent implements OnInit {
     this.clienteService.delete(this.cliente.id).subscribe(()=> {
       this.clienteService.showMessage
       ('Cliente excluido com sucesso');
-      this.router.navigate(['/cliente']);
+      this.router.navigate(['/clientes']);
     })
   }
 
   cancel(): void {
-    this.router.navigate(['/cliente']);
+    this.router.navigate(['/clientes']);
   }
 }

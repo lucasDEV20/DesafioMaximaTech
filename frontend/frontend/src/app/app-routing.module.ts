@@ -1,3 +1,4 @@
+import { VendedorUpdateComponent } from './components/vendedor/vendedor-update/vendedor-update.component';
 import { VendedorDeleteComponent } from './components/vendedor/vendedor-delete/vendedor-delete.component';
 import { ProdutoUpdateComponent } from './components/produto/produto-update/produto-update.component';
 import { ProdutoCreateComponent } from './components/produto/produto-create/produto-create.component'
@@ -39,7 +40,7 @@ const routes: Routes = [
     component: ProdutoCreateComponent,
   },
   {
-    path: 'vendedor-create',
+    path: 'vendedor/create',
     component: VendedorCreateComponent,
   },
   {
@@ -52,7 +53,7 @@ const routes: Routes = [
   },
   {
     path: 'vendedor/update:id',
-    component: VendedorCreateComponent,
+    component: VendedorUpdateComponent,
   },
   {
     path: 'cliente/update:id',
@@ -63,7 +64,7 @@ const routes: Routes = [
     component: ClienteDeleteComponent,
   },
   {
-    path: 'vendedor/update:id',
+    path: 'vendedor/delete:id',
     component: VendedorDeleteComponent,
   },
   {

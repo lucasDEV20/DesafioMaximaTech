@@ -21,7 +21,7 @@ export class VendedorCrudComponent implements OnInit {
   }
 
   navagateToVendedorCreate() : void {
-    this.router.navigate(['vendedor-create'])
+    this.router.navigate(['vendedor/create'])
   }
 
 }

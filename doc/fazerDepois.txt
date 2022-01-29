@@ -1,3 +1,12 @@
 arrumar frase do formulario  cliente reivisar
 arrumar frase do formulario  produto reivisar
 arrumar frase do formulario  vendedor reivisar
+
+editar css dos botoes edit e delete em anbos os formularios
+
+fazer o curso de doker depois deste projeto  
+
+ronomiar para desafioMaximaTech
+
+O Código do vendedor não pode repetir
+O Código do cliente não pode repetir
