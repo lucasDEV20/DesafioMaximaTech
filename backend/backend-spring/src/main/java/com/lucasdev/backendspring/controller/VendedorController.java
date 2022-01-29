@@ -25,7 +25,6 @@ import lombok.AllArgsConstructor;
 public class VendedorController {
     
 
-    
     private final VendedorRepository vendedorRepository;
 
 

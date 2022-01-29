@@ -13,7 +13,8 @@ export class ClienteCreateComponent implements OnInit {
   cliente : Cliente ={
     id: 0,
     nome: '',
-    codigo: null
+    codigo: null,
+    nomeVendedor: ''
   }
 
   constructor(private clienteService: ClienteService, private router: Router){}

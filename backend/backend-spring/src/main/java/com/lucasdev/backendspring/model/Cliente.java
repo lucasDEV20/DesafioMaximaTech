@@ -25,6 +25,12 @@ public class Cliente {
 
     @Column(length = 100, nullable = false)
     private String codigo;
+    
+    @Column(length = 100, nullable = false)
+    private String nomeVendedor;
+
+    
+
 
     
 

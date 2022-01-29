@@ -15,6 +15,11 @@
             <mat-label>Escreva a Escreva codigo do cliente</mat-label>
             <input matInput placeholder="Codigo" [value]="cliente.codigo" name="codigo" >
         </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Escreva o nome do Vendedor </mat-label>
+            <input matInput placeholder="NomeVendedor"[(ngModel)]="cliente.nomeVendedor" name = "nomeVendedor">
+        </mat-form-field>
         
         
         

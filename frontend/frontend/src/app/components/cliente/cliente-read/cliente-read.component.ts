@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClienteReadComponent implements OnInit {
   clientes: Cliente[]
-  displayedColumns = ['id',  'nome', 'codigo', 'action']
+  displayedColumns = ['id',  'nome', 'codigo','nomeVendedor', 'action']
 
   constructor(private clienteService: ClienteService) { }
 
@@ -17,7 +17,8 @@ export class ClienteReadComponent implements OnInit {
     this.clienteService.read().subscribe((cliente) => {
       this.clientes = cliente;
       console.log(cliente)
-    })
+    })  
   }
+  
 }
 
