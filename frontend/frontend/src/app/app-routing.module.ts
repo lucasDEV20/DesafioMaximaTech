@@ -12,6 +12,7 @@ import { ClienteCreateComponent } from './components/cliente/cliente-create/clie
 import { VendedorCreateComponent } from './components/vendedor/vendedor-create/vendedor-create.component'
 import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
 import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
+import { ProdutoDeleteComponent } from './components/produto/produto-delete/produto-delete.component';
 
 const routes: Routes = [
   //rotas dos componentes
@@ -61,7 +62,7 @@ const routes: Routes = [
   },
   {
     path: 'produto/delete/:id',
-    component: ClienteDeleteComponent,
+    component: ProdutoDeleteComponent,
   },
   {
     path: 'vendedor/delete/:id',

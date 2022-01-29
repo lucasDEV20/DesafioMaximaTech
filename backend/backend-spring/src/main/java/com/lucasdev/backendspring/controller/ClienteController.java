@@ -5,8 +5,11 @@ import java.util.List;
 import com.lucasdev.backendspring.model.Cliente;
 import com.lucasdev.backendspring.repository.ClienteRepository;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -25,8 +28,8 @@ public class ClienteController {
 
 
     @GetMapping(value = "/{id}")
-    public @ResponseBody  List<Cliente> list(){
-        return clienteRepository.findAll();
+    public @ResponseBody Cliente getById(@PathVariable Long id) {
+        return clienteRepository.findById(id).get();
     }
 
     //o de cima recebe parametro o de baixo nao 
@@ -41,6 +44,25 @@ public class ClienteController {
       System.out.println("Post:"+cliente.toString());
         return clienteRepository.save(cliente);
     }
+
+    @PutMapping(value = "/{id}")
+    public Cliente put(@RequestBody Cliente cliente){
+     
+       return clienteRepository.save(cliente);
+
+       
+    }
+   
+    @DeleteMapping(value = "/{id}")
+    public Cliente delete(@PathVariable Long id){
+        Cliente cliente = this.clienteRepository.findById(id).get();
+        this.clienteRepository.deleteById(id);
+        return cliente;
+
+        
+    }
+
+
 
    
 

@@ -45,7 +45,7 @@ public class VendedorController {
         return vendedorRepository.save(vendedor);
     }
 
-     @PutMapping
+     @PutMapping(value = "/{id}")
      public Vendedor put(@RequestBody Vendedor vendedor){
       
         return vendedorRepository.save(vendedor);
