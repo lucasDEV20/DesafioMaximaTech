@@ -12,7 +12,8 @@ export class VendedorCreateComponent implements OnInit {
 
   vendedor: Vendedor ={
     nome: '',
-    codigo: 0
+    codigo: 0,
+    id: 0
   }
   constructor(private vendedorService: VendedorService, private router: Router) { }
 

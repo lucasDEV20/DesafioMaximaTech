@@ -47,3 +47,5 @@ import lombok.ToString; */
 
      Para a chave primaria utilizamos a anotação (@id)
      Para definir as colunas utilizamos a anotação (@Column)
+
+     no backendController vai ter que ter um @verboMapping para cada http.verbo no Service do frontend, com os mesmo parametros dos 2 lados

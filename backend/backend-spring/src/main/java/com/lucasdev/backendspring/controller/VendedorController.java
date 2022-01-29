@@ -7,6 +7,7 @@ import com.lucasdev.backendspring.repository.VendedorRepository;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.AllArgsConstructor;
@@ -21,8 +22,8 @@ public class VendedorController {
     private final VendedorRepository vendedorRepository;
 
 
-    @GetMapping
-    public List<Vendedor> list() {
+    @GetMapping(value = "/{id}")
+    public @ResponseBody List<Vendedor> list() {
         return vendedorRepository.findAll();
     }
 

@@ -23,14 +23,15 @@ export class ClienteCreateComponent implements OnInit {
   ngOnInit(): void {}
   
   createCliente(): void {
+    console.log(this.cliente);
     this.clienteService.create(this.cliente).subscribe(() => {
       this.clienteService.showMessage('Cliente cadastrado!')
-       this.router.navigate(['/cliente'])
+      this.router.navigate(['/clientes'])
     })
   }
 
   cancel(): void {
-    this.router.navigate(['/cliente'])
+    this.router.navigate(['/clientes'])
     this.clienteService.showMessage('Cliente não cadastrado')
     
   }

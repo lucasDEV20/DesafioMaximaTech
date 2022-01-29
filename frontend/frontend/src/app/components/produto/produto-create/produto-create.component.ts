@@ -11,7 +11,8 @@ export class ProdutoCreateComponent implements OnInit {
 
   produto: Produto = {
     nome: '',
-    codigo: 0
+    codigo: 0,
+    id: 0
   }
 
   constructor(private produtoService: ProdutoService, private router: Router){}

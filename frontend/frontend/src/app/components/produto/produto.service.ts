@@ -11,7 +11,7 @@ import { Produto } from './produto.model'
 })
 export class ProdutoService {
 
-  baseUrl = "http://localhost:3001/produto"
+  baseUrl = "api/produto"
 
   constructor(
     private snackBar: MatSnackBar,

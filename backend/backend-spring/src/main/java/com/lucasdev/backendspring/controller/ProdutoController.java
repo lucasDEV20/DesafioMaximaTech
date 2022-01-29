@@ -7,6 +7,7 @@ import com.lucasdev.backendspring.repository.ProdutoRepository;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.AllArgsConstructor;
@@ -15,7 +16,7 @@ import lombok.AllArgsConstructor;
 
 
 @RestController
-@RequestMapping("/api/produto")
+@RequestMapping(value = "/api/produto")
 @AllArgsConstructor
 public class ProdutoController {
     
@@ -24,8 +25,8 @@ public class ProdutoController {
     private final ProdutoRepository produtoRepository;
 
 
-    @GetMapping
-    public List<Produto> list() {
+    @GetMapping(value = "/{id}")
+    public @ResponseBody List<Produto> list() {
         return produtoRepository.findAll();
     }
     

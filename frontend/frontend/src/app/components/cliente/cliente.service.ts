@@ -10,7 +10,7 @@ import { Cliente } from './cliente.model'
 })
 export class ClienteService {
 
-  baseUrl = "http://localhost:3001/clientes"
+  baseUrl = "/api/cliente"
 
   constructor(
     private snackBar: MatSnackBar,
@@ -19,7 +19,7 @@ export class ClienteService {
 
   showMessage(msg: string, isError: boolean = false): void {
     this.snackBar.open(msg, 'X', {
-      duration: 3000,
+      /* duration: 3000, */
       horizontalPosition: "right",
       verticalPosition: "top",
       panelClass: isError ? ['msg-error'] : ['msg-success']
@@ -66,7 +66,7 @@ export class ClienteService {
   }
 
   errorHandler(e: any): Observable<any> {
-    this.showMessage("Ocorreu um erro!", true);
+    this.showMessage("Ocorreu um erro: "+e.message, true);
     return EMPTY;
   }
 }

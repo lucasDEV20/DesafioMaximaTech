@@ -23,7 +23,6 @@ public class InstanciaBanco {
     private VendedorRepository vendedorRepository; // instanciando o obj repository
 
     @Bean
-    @Lazy
     //quando subir executa a seguinte sequencia 
     void iniciarBancoDeDados() {
 
@@ -31,19 +30,19 @@ public class InstanciaBanco {
         produtoRepository.deleteAll();
         Produto p = new Produto();
         p.setNome("computador");
-        p.setCodigo(001);
+        p.setCodigo("123");
         produtoRepository.save(p);
 
         vendedorRepository.deleteAll();
         Vendedor v = new Vendedor();
         v.setNome("joao das uva");
-        v.setCodigo(001);
+        v.setCodigo("123");
         vendedorRepository.save(v);
 
         clienteRepository.deleteAll();
         Cliente c = new Cliente();
         c.setNome("godofredo araujo");
-        c.setCodigo(001);
+        c.setCodigo("123");
         clienteRepository.save(c);
 
     }

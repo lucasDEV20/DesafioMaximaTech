@@ -1,5 +1,5 @@
 export interface Vendedor{
-    id?: number;
+    id: number;
     nome: string;
     codigo: number;
 }

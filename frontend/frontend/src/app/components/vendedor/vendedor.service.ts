@@ -12,7 +12,7 @@ import { Vendedor } from './vendedor.model'
 })
 export class VendedorService {
 
-  baseUrl = "http://localhost:4200/vendedor/"
+  baseUrl = "api/vendedor/"
 
   constructor(
     private snackBar: MatSnackBar,
