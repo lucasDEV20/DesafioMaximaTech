@@ -19,7 +19,7 @@ export class ClienteService {
 
   showMessage(msg: string, isError: boolean = false): void {
     this.snackBar.open(msg, 'X', {
-      /* duration: 3000, */
+      duration: 3000,
       horizontalPosition: "right",
       verticalPosition: "top",
       panelClass: isError ? ['msg-error'] : ['msg-success']

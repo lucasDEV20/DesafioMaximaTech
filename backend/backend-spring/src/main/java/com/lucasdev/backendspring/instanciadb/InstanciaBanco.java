@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 
-@Configuration
+/* @Configuration
 //inicializara primeiro que todo mundo 
 public class InstanciaBanco {
     @Autowired
@@ -47,3 +47,4 @@ public class InstanciaBanco {
 
     }
 }
+ */

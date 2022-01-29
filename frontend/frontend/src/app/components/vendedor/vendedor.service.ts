@@ -12,7 +12,7 @@ import { Vendedor } from './vendedor.model'
 })
 export class VendedorService {
 
-  baseUrl = "api/vendedor/"
+  baseUrl = "api/vendedor"
 
   constructor(
     private snackBar: MatSnackBar,
@@ -72,7 +72,7 @@ export class VendedorService {
   }
 
   errorHandler(e: any): Observable<any> {
-    this.showMessage("Ocorreu um erro!", true);
+    this.showMessage("Ocorreu um erro!"+e.message, true);
     return EMPTY;
   }
 }

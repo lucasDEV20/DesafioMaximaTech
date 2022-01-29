@@ -25,7 +25,7 @@ export class ProdutoCreateComponent implements OnInit {
     this.produtoService.create(this.produto).subscribe(() => {
       //no metodo subscribe eu serei notificado quando a resposta chegar
       this.produtoService.showMessage('Produto cadastrado!')
-       this.router.navigate(['/cliente'])
+       this.router.navigate(['/produto'])
     })
   }
 
