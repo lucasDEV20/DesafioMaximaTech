@@ -19,10 +19,10 @@ public class Vendedor {
     @JsonProperty("id")
     private Long id;
     
-    @Column(length = 100, nullable = false)
+    @Column(unique = true, length = 100, nullable = false)
     private String nome;
 
-    @Column(length = 100, nullable = false)
+    @Column(unique = true, length = 100, nullable = false)
     private String codigo;
 
 }
