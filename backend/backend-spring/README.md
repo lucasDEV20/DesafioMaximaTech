@@ -38,11 +38,12 @@ spring.jpa.show-sql=true
 
 ## dentro do porn.xml acrescente a denpencia 
 
-<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.5.10</version>
-</dependency>
+. <dependency>
+<groupId>org.springdoc</groupId>
+	<artifactId>springdoc-openapi-ui</artifactId>
+<version>1.5.10</version>
+</dependency> .
+
 
 ## Dentro da classe princiapal acresecente 
 
