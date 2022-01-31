@@ -56,7 +56,7 @@ springdoc.api-docs.path=/api-doc
 springdoc.swagger-ui.path=/doc
 
 
-# Estrutura da arvore do projeto
+# Estrutura de arquivo do projeto
 
 ![image](https://user-images.githubusercontent.com/55209015/151729005-feee28ba-76a4-4a2e-bd3e-fcabf90fa340.png)
 
